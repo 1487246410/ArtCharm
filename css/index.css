@@ -1,0 +1,2268 @@
+
+/* 初始化start */
+#create{
+    width: 100%;
+    height: 100%;
+    background-color: #999999;
+}
+#cc {
+    width: 50%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    z-index: 999;/*z-index   取值越大，定位元素就更居上  如若取值相同，后来居上  只针对定位使用  不带单位    */
+}
+#cc1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: red;
+    top: 0;
+    right: 0;
+    position: absolute;
+    animation-name: example1;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    z-index: 999;
+}
+
+@keyframes example {
+    from {
+        left: -50%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    to {
+        left: 0%;
+        background-color: rgb(106, 106, 209);
+    }
+}
+@keyframes example1 {
+    from {
+        right: -50%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    to {
+        right: 0%;
+        background-color: rgb(204, 125, 197);
+    }
+} 
+/* 初始化end */
+
+.all{
+    display: none;
+}
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner .banner-left{
+    min-width: 30px;
+    display: none;
+}
+.banner-left .banner-left-msg{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+
+}
+.banner-left .banner-left-msg li{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+}
+.banner-left .banner-left-msg ul{
+    margin: 5px 0px;
+}
+.banner-left .banner-left-msg li a{
+    color: #505050;
+    font-size: 10px;
+    text-decoration: none;
+    line-height: 25px;
+    width: 100%;
+    display: block;
+    padding: 5px 5px;
+}
+.banner-left .banner-left-msg li a:hover{
+    color: rgba(0,0,0,.8);
+    background-color: #dd6b3a;
+}
+.fixed {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+}
+.banner .banner-container{
+    position: relative;
+    width: 1110px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px auto 0px auto;
+}
+.banner .banner-container .wrap{
+    position: absolute;
+    width: 7770px;
+    height: 400px;
+    z-index: 1;
+}
+.banner .banner-container img{
+    width: 1110px;
+    height: 300px;
+    float: left;
+}
+.banner .banner-container .buttons{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 20px;
+    z-index: 2;
+}
+.banner .banner-container .buttons span{
+    margin-left: 8px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+.banner .banner-container .buttons span:nth-child(1){
+    margin-left: 0px;
+}
+.banner .banner-container .buttons span.on{
+    background-color: #FFFFFF;
+}
+.banner .banner-container .arrow{
+    text-decoration:none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    color: #E4E4E4;
+    z-index: 2;
+    /*padding: 0 20px;*/
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: 700;
+    display: none;
+}
+.banner .banner-container .arrow_left {
+    left: 10px;
+}
+.banner .banner-container .arrow_right {
+    right: 10px;
+}
+.banner .banner-container:hover .arrow {
+    display: block;
+}
+.banner .banner-container .arrow:hover {
+    color: #999999;
+}
+
+.shougongyi{
+    width: 1110px;
+    height: 532px;
+    margin: 50px auto 0px auto;
+}
+.shougongyi h4 a{
+    text-decoration: none;
+    color: #0079FE;
+    border: 2px solid #0079FE;
+    width: 123px;
+    line-height: 36px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px;
+    display: block;
+}
+.shougongyi-content{
+    width: 1110px;
+    height: 459px;
+    margin-top: 33px;
+}
+.shougongyi-left{
+    position: relative;
+    width: 791px;
+    height: 100%;
+    float: left;
+}
+.shougongyi-left-title{
+    width: 246px;
+    height: 57px;
+    float: left;
+}
+.shougongyi-left-title li{
+    width: 123px;
+    line-height: 57px;
+    text-align: center;
+    background-color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    color: #666666;
+}
+.activeLi{
+    border-bottom: 3px solid #3399FF;
+}
+/*手工艺公告css*/
+.shougongyi-Notice{
+    width: 513px;
+    height: 41px;
+    float: left;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #FFF5E6;
+    border: 1px solid #FFEBCC;
+    border-radius: 5px;
+}
+.shougongyi-Notice span{
+    font-family: 'cc';
+    color: #FE9400;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.shougongyi-Notice p{
+    line-height: 41px;
+}
+/*书法公告css*/
+.shufa-Notice{
+    width: 513px;
+    height: 41px;
+    float: left;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #FFF5E6;
+    border: 1px solid #FFEBCC;
+    border-radius: 5px;
+}
+.shufa-Notice span{
+    font-family: 'cc';
+    color: #FE9400;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.shufa-Notice p{
+    line-height: 41px;
+}
+/*绘画公告css*/
+.huihua-Notice{
+    width: 513px;
+    height: 41px;
+    float: left;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #FFF5E6;
+    border: 1px solid #FFEBCC;
+    border-radius: 5px;
+}
+.huihua-Notice span{
+    font-family: 'cc';
+    color: #FE9400;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.huihua-Notice p{
+    line-height: 41px;
+}
+/*创新公告css*/
+.chaungxin-Notice{
+    width: 513px;
+    height: 41px;
+    float: left;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #FFF5E6;
+    border: 1px solid #FFEBCC;
+    border-radius: 5px;
+}
+.chaungxin-Notice span{
+    font-family: 'cc';
+    color: #FE9400;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.chaungxin-Notice p{
+    line-height: 41px;
+}
+/*雕塑公告css*/
+.diaosu-Notice{
+    width: 513px;
+    height: 41px;
+    float: left;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #FFF5E6;
+    border: 1px solid #FFEBCC;
+    border-radius: 5px;
+}
+.diaosu-Notice span{
+    font-family: 'cc';
+    color: #FE9400;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.diaosu-Notice p{
+    line-height: 41px;
+}/*饰服公告css*/
+.shifu-Notice{
+    width: 513px;
+    height: 41px;
+    float: left;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #FFF5E6;
+    border: 1px solid #FFEBCC;
+    border-radius: 5px;
+}
+.shifu-Notice span{
+    font-family: 'cc';
+    color: #FE9400;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.shifu-Notice p{
+    line-height: 41px;
+}
+/*民族工艺公告css*/
+.minzugongyi-Notice{
+    width: 513px;
+    height: 41px;
+    float: left;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #FFF5E6;
+    border: 1px solid #FFEBCC;
+    border-radius: 5px;
+}
+.minzugongyi-Notice span{
+    font-family: 'cc';
+    color: #FE9400;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.minzugongyi-Notice p{
+    line-height: 41px;
+}
+/*古往今来公告css*/
+.guwangjinlai-Notice{
+    width: 513px;
+    height: 41px;
+    float: left;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #FFF5E6;
+    border: 1px solid #FFEBCC;
+    border-radius: 5px;
+}
+.guwangjinlai-Notice span{
+    font-family: 'cc';
+    color: #FE9400;
+    font-size: 18px;
+    float: left;
+    padding: 0px 8px;
+    line-height: 41px;
+}
+.guwangjinlai-Notice p{
+    line-height: 41px;
+}
+/*手工艺传统现代图片css*/
+.shougongyi-left-chauntong{
+    width: 791px;
+    height: 356px;
+    margin-top: 42px;
+    float: left;
+}
+.shougongyi-left .shougongyi-left-chauntong li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .shougongyi-left-chauntong li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .shougongyi-left-chauntong li:nth-child(5){
+    margin: 0px 58px;
+}
+.shougongyi-left-chauntong a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/糖人.jpg") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.shougongyi-left-chauntong a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.shougongyi-left-chauntong span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shougongyi-left-xiandai{
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 791px;
+    height: 356px;
+    float: left;
+    display: none;
+}
+.shougongyi-left .shougongyi-left-xiandai li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .shougongyi-left-xiandai li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .shougongyi-left-xiandai li:nth-child(5){
+    margin: 0px 58px;
+}
+.shougongyi-left-xiandai a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/占位图.png") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.shougongyi-left-xiandai a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.shougongyi-left-xiandai span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*书法图片传统现代css*/
+.shufa-left-chauntong{
+    width: 791px;
+    height: 356px;
+    margin-top: 42px;
+    float: left;
+}
+.shougongyi-left .shufa-left-chauntong li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .shufa-left-chauntong li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .shufa-left-chauntong li:nth-child(5){
+    margin: 0px 58px;
+}
+.shufa-left-chauntong a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/书法.jpg") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.shufa-left-chauntong a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.shufa-left-chauntong span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shufa-left-xiandai{
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 791px;
+    height: 356px;
+    float: left;
+    display: none;
+}
+.shougongyi-left .shufa-left-xiandai li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .shufa-left-xiandai li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .shufa-left-xiandai li:nth-child(5){
+    margin: 0px 58px;
+}
+.shufa-left-xiandai a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/占位图.png") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.shufa-left-xiandai a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.shufa-left-xiandai span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*绘画图片传统现代css*/
+.huihua-left-chauntong{
+    width: 791px;
+    height: 356px;
+    margin-top: 42px;
+    float: left;
+}
+.shougongyi-left .huihua-left-chauntong li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .huihua-left-chauntong li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .huihua-left-chauntong li:nth-child(5){
+    margin: 0px 58px;
+}
+.huihua-left-chauntong a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/绘画.jpg") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.huihua-left-chauntong a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.huihua-left-chauntong span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.huihua-left-xiandai{
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 791px;
+    height: 356px;
+    float: left;
+    display: none;
+}
+.shougongyi-left .huihua-left-xiandai li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .huihua-left-xiandai li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .huihua-left-xiandai li:nth-child(5){
+    margin: 0px 58px;
+}
+.huihua-left-xiandai a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/占位图.png") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.huihua-left-xiandai a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.huihua-left-xiandai span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*创新图片传统现代css*/
+.chuangxin-left-chauntong{
+    width: 791px;
+    height: 356px;
+    margin-top: 42px;
+    float: left;
+}
+.shougongyi-left .chuangxin-left-chauntong li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .chuangxin-left-chauntong li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .chuangxin-left-chauntong li:nth-child(5){
+    margin: 0px 58px;
+}
+.chuangxin-left-chauntong a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/创新.jpg") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.chuangxin-left-chauntong a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.chuangxin-left-chauntong span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.chuangxin-left-xiandai{
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 791px;
+    height: 356px;
+    float: left;
+    display: none;
+}
+.shougongyi-left .chuangxin-left-xiandai li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .chuangxin-left-xiandai li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .chuangxin-left-xiandai li:nth-child(5){
+    margin: 0px 58px;
+}
+.chuangxin-left-xiandai a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/占位图.png") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.chuangxin-left-xiandai a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.chuangxin-left-xiandai span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*雕塑图片传统现代css*/
+.diaosu-left-chauntong{
+    width: 791px;
+    height: 356px;
+    margin-top: 42px;
+    float: left;
+}
+.shougongyi-left .diaosu-left-chauntong li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .diaosu-left-chauntong li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .diaosu-left-chauntong li:nth-child(5){
+    margin: 0px 58px;
+}
+.diaosu-left-chauntong a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/雕塑.jpg") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.diaosu-left-chauntong a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.diaosu-left-chauntong span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.diaosu-left-xiandai{
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 791px;
+    height: 356px;
+    float: left;
+    display: none;
+}
+.shougongyi-left .diaosu-left-xiandai li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .diaosu-left-xiandai li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .diaosu-left-xiandai li:nth-child(5){
+    margin: 0px 58px;
+}
+.diaosu-left-xiandai a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/占位图.png") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.diaosu-left-xiandai a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.diaosu-left-xiandai span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*饰服图片传统现代css*/
+.shifu-left-chauntong{
+    width: 791px;
+    height: 356px;
+    margin-top: 42px;
+    float: left;
+}
+.shougongyi-left .shifu-left-chauntong li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .shifu-left-chauntong li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .shifu-left-chauntong li:nth-child(5){
+    margin: 0px 58px;
+}
+.shifu-left-chauntong a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/饰服.jpg") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.shifu-left-chauntong a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.shifu-left-chauntong span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shifu-left-xiandai{
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 791px;
+    height: 356px;
+    float: left;
+    display: none;
+}
+.shougongyi-left .shifu-left-xiandai li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .shifu-left-xiandai li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .shifu-left-xiandai li:nth-child(5){
+    margin: 0px 58px;
+}
+.shifu-left-xiandai a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/占位图.png") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.shifu-left-xiandai a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.shifu-left-xiandai span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*民族工艺图片传统现代css*/
+.minzugongyi-left-chauntong{
+    width: 791px;
+    height: 356px;
+    margin-top: 42px;
+    float: left;
+}
+.shougongyi-left .minzugongyi-left-chauntong li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .minzugongyi-left-chauntong li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .minzugongyi-left-chauntong li:nth-child(5){
+    margin: 0px 58px;
+}
+.minzugongyi-left-chauntong a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/民族工艺.jpg") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.minzugongyi-left-chauntong a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.minzugongyi-left-chauntong span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.minzugongyi-left-xiandai{
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 791px;
+    height: 356px;
+    float: left;
+    display: none;
+}
+.shougongyi-left .minzugongyi-left-xiandai li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .minzugongyi-left-xiandai li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .minzugongyi-left-xiandai li:nth-child(5){
+    margin: 0px 58px;
+}
+.minzugongyi-left-xiandai a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/占位图.png") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.minzugongyi-left-xiandai a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.minzugongyi-left-xiandai span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*古往今来图片传统现代css*/
+.guwangjinlai-left-chauntong{
+    width: 791px;
+    height: 356px;
+    margin-top: 42px;
+    float: left;
+}
+.shougongyi-left .guwangjinlai-left-chauntong li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .guwangjinlai-left-chauntong li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .guwangjinlai-left-chauntong li:nth-child(5){
+    margin: 0px 58px;
+}
+.guwangjinlai-left-chauntong a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/古往今来.jpg") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.guwangjinlai-left-chauntong a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.guwangjinlai-left-chauntong span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.guwangjinlai-left-xiandai{
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 791px;
+    height: 356px;
+    float: left;
+    display: none;
+}
+.shougongyi-left .guwangjinlai-left-xiandai li{
+    width: 225px;
+    height: 178px;
+    float: left;
+}
+.shougongyi-left .guwangjinlai-left-xiandai li:nth-child(2){
+    margin: 0px 58px;
+}
+.shougongyi-left .guwangjinlai-left-xiandai li:nth-child(5){
+    margin: 0px 58px;
+}
+.guwangjinlai-left-xiandai a{
+    width: 225px;
+    height: 140px;
+    background: url("../image/网站首页/占位图.png") no-repeat;
+    display: block;
+    z-index: 2;
+    transition: all .5s;
+}
+.guwangjinlai-left-xiandai a:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
+.guwangjinlai-left-xiandai span{
+    height: 26px;
+    line-height: 16px;
+    width: 225px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shougongyi-right{
+    width: 274px;
+    float: right;
+    height: 100%;
+}
+.shougongyi-right h2{
+    width: 100%;
+    line-height: 57px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 0px;
+    font-size: 24px;
+    color: #666666;
+    text-align: center;
+}
+.shougongyi-right-content{
+    width: 100%;
+    height: 355px;
+    margin-top: 42px;
+    background-color: #FFFFFF;
+    border-top: 4px solid rgba(0, 102, 153, 0.56);
+    position: relative;
+}
+/*手工艺收藏点赞内容切换css*/
+.Ranking-1{
+    width: 136px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.Ranking-1 .Collection-1{
+    width: 66px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+}
+.activeDiv{
+    border-bottom: 2px solid #666666;
+}
+.Give-the-thumbs-up-1{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+}
+.Ranking-List-1 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-1 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-1 li a:hover{
+    color: black;
+}
+.Ranking-List-1 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-1 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-1 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-1 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-1 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-1 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-1 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-1 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-1 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-1 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-1 li:nth-child(1){
+    margin-top: 0;
+}
+
+.Ranking-List-toggle-1{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.Ranking-List-toggle-1 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-toggle-1 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-toggle-1 li a:hover{
+    color: black;
+}
+.Ranking-List-toggle-1 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-toggle-1 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-toggle-1 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-toggle-1 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-1 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-toggle-1 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-toggle-1 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-toggle-1 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-toggle-1 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-1 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-toggle-1 li:nth-child(1){
+    margin-top: 0;
+}
+/*书法收藏点赞内容切换css*/
+.Ranking-2{
+    width: 136px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.Ranking-2 .Collection-2{
+    width: 66px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+}
+.Give-the-thumbs-up-2{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+}
+.Ranking-List-2 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-2 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-2 li a:hover{
+    color: black;
+}
+.Ranking-List-2 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-2 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-2 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-2 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-2 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-2 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-2 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-2 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-2 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-2 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-2 li:nth-child(1){
+    margin-top: 0;
+}
+
+.Ranking-List-toggle-2{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.Ranking-List-toggle-2 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-toggle-2 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-toggle-2 li a:hover{
+    color: black;
+}
+.Ranking-List-toggle-2 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-toggle-2 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-toggle-2 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-toggle-2 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-2 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-toggle-2 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-toggle-2 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-toggle-2 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-toggle-2 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-2 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-toggle-2 li:nth-child(1){
+    margin-top: 0;
+}
+/*绘画收藏点赞内容切换css*/
+.Ranking-3{
+    width: 136px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.Ranking-3 .Collection-3{
+    width: 66px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+}
+.Give-the-thumbs-up-3{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+}
+.Ranking-List-3 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-3 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-3 li a:hover{
+    color: black;
+}
+.Ranking-List-3 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-3 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-3 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-3 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-3 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-3 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-3 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-3 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-3 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-3 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-3 li:nth-child(1){
+    margin-top: 0;
+}
+
+.Ranking-List-toggle-3{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.Ranking-List-toggle-3 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-toggle-3 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-toggle-3 li a:hover{
+    color: black;
+}
+.Ranking-List-toggle-3 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-toggle-3 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-toggle-3 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-toggle-3 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-3 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-toggle-3 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-toggle-3 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-toggle-3 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-toggle-3 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-3 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-toggle-3 li:nth-child(1){
+    margin-top: 0;
+}
+
+/*创新收藏点赞内容切换css*/
+.Ranking-4{
+    width: 136px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.Ranking-4 .Collection-4{
+    width: 66px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+}
+.Give-the-thumbs-up-4{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+}
+.Ranking-List-4 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-4 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-4 li a:hover{
+    color: black;
+}
+.Ranking-List-4 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-4 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-4 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-4 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-4 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-4 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-4 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-4 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-4 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-4 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-4 li:nth-child(1){
+    margin-top: 0;
+}
+
+.Ranking-List-toggle-4{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.Ranking-List-toggle-4 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-toggle-4 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-toggle-4 li a:hover{
+    color: black;
+}
+.Ranking-List-toggle-4 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-toggle-4 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-toggle-4 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-toggle-4 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-4 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-toggle-4 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-toggle-4 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-toggle-4 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-toggle-4 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-4 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-toggle-4 li:nth-child(1){
+    margin-top: 0;
+}
+
+/*雕塑收藏点赞内容切换css*/
+.Ranking-5{
+    width: 136px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.Ranking-5 .Collection-5{
+    width: 66px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+}
+.Give-the-thumbs-up-5{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+}
+.Ranking-List-5 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-5 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-5 li a:hover{
+    color: black;
+}
+.Ranking-List-5 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-5 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-5 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-5 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-5 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-5 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-5 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-5 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-5 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-5 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-5 li:nth-child(1){
+    margin-top: 0;
+}
+
+.Ranking-List-toggle-5{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.Ranking-List-toggle-5 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-toggle-5 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-toggle-5 li a:hover{
+    color: black;
+}
+.Ranking-List-toggle-5 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-toggle-5 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-toggle-5 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-toggle-5 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-5 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-toggle-5 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-toggle-5 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-toggle-5 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-toggle-5 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-5 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-toggle-5 li:nth-child(1){
+    margin-top: 0;
+}
+
+/*饰服收藏点赞内容切换css*/
+.Ranking-6{
+    width: 136px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.Ranking-6 .Collection-6{
+    width: 66px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+}
+.Give-the-thumbs-up-6{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+}
+.Ranking-List-6 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-6 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-6 li a:hover{
+    color: black;
+}
+.Ranking-List-6 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-6 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-6 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-6 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-6 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-6 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-6 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-6 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-6 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-6 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-6 li:nth-child(1){
+    margin-top: 0;
+}
+
+.Ranking-List-toggle-6{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.Ranking-List-toggle-6 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-toggle-6 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-toggle-6 li a:hover{
+    color: black;
+}
+.Ranking-List-toggle-6 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-toggle-6 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-toggle-6 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-toggle-6 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-6 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-toggle-6 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-toggle-6 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-toggle-6 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-toggle-6 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-6 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-toggle-6 li:nth-child(1){
+    margin-top: 0;
+}
+
+/*民族工艺收藏点赞内容切换css*/
+.Ranking-7{
+    width: 136px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.Ranking-7 .Collection-7{
+    width: 66px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+}
+.Give-the-thumbs-up-7{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+}
+.Ranking-List-7 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-7 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-7 li a:hover{
+    color: black;
+}
+.Ranking-List-7 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-7 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-7 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-7 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-7 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-7 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-7 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-7 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-7 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-7 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-7 li:nth-child(1){
+    margin-top: 0;
+}
+
+.Ranking-List-toggle-7{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.Ranking-List-toggle-7 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-toggle-7 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-toggle-7 li a:hover{
+    color: black;
+}
+.Ranking-List-toggle-7 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-toggle-7 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-toggle-7 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-toggle-7 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-7 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-toggle-7 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-toggle-7 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-toggle-7 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-toggle-7 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-7 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-toggle-7 li:nth-child(1){
+    margin-top: 0;
+}
+
+/*古往今来收藏点赞内容切换css*/
+.Ranking-8{
+    width: 136px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.Ranking-8 .Collection-8{
+    width: 66px;
+    height: 30px;
+    float: left;
+    margin-right: 4px;
+}
+.Give-the-thumbs-up-8{
+    width: 66px;
+    height: 30px;
+    display: inline-block;
+}
+.Ranking-List-8 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-8 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-8 li a:hover{
+    color: black;
+}
+.Ranking-List-8 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-8 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-8 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-8 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-8 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-8 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-8 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-8 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-8 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-8 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-8 li:nth-child(1){
+    margin-top: 0;
+}
+
+.Ranking-List-toggle-8{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.Ranking-List-toggle-8 li{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #666666;
+}
+.Ranking-List-toggle-8 li a{
+    width: 230px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.Ranking-List-toggle-8 li a:hover{
+    color: black;
+}
+.Ranking-List-toggle-8 li .redA:hover{
+    color: #FF3300;
+}
+.Ranking-List-toggle-8 li .orangeA:hover{
+    color: orange;
+}
+.Ranking-List-toggle-8 li .yellowA:hover{
+    color: #FFCC00;
+}
+.Ranking-List-toggle-8 li .greenA:hover{
+    color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-8 li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    margin: 0 8px 0 5px;
+}
+.Ranking-List-toggle-8 .redSpan{
+    background-color: #FF3300;
+}
+.Ranking-List-toggle-8 .orangeSpan{
+    background-color: orange;
+}
+.Ranking-List-toggle-8 .yellowSpan{
+    background-color: #FFCC00;
+}
+.Ranking-List-toggle-8 .greenSpan{
+    background-color: rgba(255, 255, 0, 0.71);
+}
+.Ranking-List-toggle-8 li em{
+    float: right;
+    margin-right: 10px;
+}
+.Ranking-List-toggle-8 li:nth-child(1){
+    margin-top: 0;
+}
+
+/*悬浮start*/
+.xuanfu{
+    width: 209px;
+    height: 249px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.xuanfu-left{
+    width: 145px;
+    height: 141px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    display: none;
+}
+.xuanfu-left p{
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999999;
+    margin: 0;
+}
+.xuanfu-left img{
+    margin-left: 23px;
+}
+.xuanfu-right{
+    width: 60px;
+    height: 100%;
+}
+.xuanfu-right li{
+    width: 60px;
+    line-height: 60px;
+    margin-top: 3px;
+    font-family: 'cc';
+    font-size: 24px;
+    text-align: center;
+    background-color: #D8E0E5;
+}
+.xuanfu-right li a{
+    width: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+}
+.xuanfu-right li a:hover{
+    color: #0079FE;
+}
+.xuanfu-right li:nth-child(1){
+    margin-top: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.xuanfu-right li:nth-child(2){
+    margin-top: 63px;
+}
+/*悬浮end*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我要发表</title>
+
+    <!--往往主键和内容也是搜索引擎的一部分-->
+    <meta name="description"
+        content="艺韵是手工艺品的网站，这里有最具收藏价值的各路工艺珍品，还有与历史，民族相交融的文化遗产，在这里不仅可以了解历史文化，还可以学习手工艺品的制作方法，为中华传统文化的传承与弘扬提供了重要的渠道，也为广大热爱文化和艺术品的人们，提供了平台。大家在这里发现艺术与文化的魅力，让我们携手共创美好世界。" />
+    <meta name="Keywords" content="艺韵，手工，工艺，文化，历史，雕塑，插画，传统，非物质文化遗产，视频，教学，木艺，陶艺，编织，折纸，创意，设计，服务。" />
+
+
+    <!--使用ico  ico不是图片  而是一个应用的标题-->
+    <link rel="shortcut icon" href="fonts/yiyun.ico">
+
+    <!--normalize.css   导入浏览器默认初始化的样式-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--bootstrap.css  css-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <!--base.css    里面只写公共样式，针对头部和底部的样式-->
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--index.css    艺韵首页的css，只写首页的-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="css/u33.css">
+
+</head>
+
+<body>
+
+    <!--top start-->
+    <div class="top">
+
+        <div class="login">
+            <a href="index.html" title="艺韵">艺韵</a>
+        </div>
+
+        <div class="navbar w">
+            <ul class="nav navbar-nav">
+                <li>
+                    <span></span>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <span></span>
+                    <a href="艺韵GO！.html">艺韵GO！</a>
+                </li>
+                <li class="activeC">
+                    <span></span>
+                    <a href="我要发表.html">我要发表</a>
+                </li>
+                <li>
+                    <span></span>
+                    <a href="消息中心.html">消息中心</a>
+                </li>
+                <li>
+                    <span></span>
+                    <a href="二次重塑.html">二次重塑</a>
+                </li>
+                <li>
+                    <span></span>
+                    <a href="展品鉴定.html">展品鉴定</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <div class="form-group">
+                <input type="search" placeholder="请输入搜索内容" maxlength="15">
+                <!--为了让控件在任何表单风格中不出错，需要添加类名“form-control”-->
+            </div>
+            <div class="search-head">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="box-remove">
+            <i></i>
+            <span></span>
+        </div>
+
+        <div class="box-remove-chide">
+            <a href="我要发表.html">上传作品</a>
+            <a href="展品鉴定.html">作品鉴定</a>
+        </div>
+
+        <div class="user">
+            <a href="登录页面.html">
+                <i></i>
+                <em></em>
+                <span>登录</span>
+            </a>
+        </div>
+
+        <div class="regist">
+            <a href="注册页面.html">
+                <i></i>
+                <em></em>
+                <span>注册</span>
+            </a>
+        </div>
+    </div>
+    <!--top end-->
+
+    <div class="banner">
+        <div class="u33">
+            <div class="u33_img">
+                <img class="u33_img" src="image/我要发表/u33.jpg" />
+                <p class="u33_text">Enviar o trabalho</p>
+            </div>
+        </div>
+        <p class="My u33_img">发表My的作品!</p>
+        <div class="u35_img">
+            <img src="image/我要发表/u35.jpg" id="u35" />
+        </div>
+        <p class="u33_p1">榫卯工艺,既是中华智慧的结晶,亦是中华文脉的延续.</p>
+        <!--Enviar o trabalho end-->
+
+        <!--input start-->
+        <div id="anniu" class="u33_img">
+            <ul>
+                <li class="zhan" style="cursor: pointer;"><span></span>展品</li>
+                <li class="wen" style="cursor: pointer;">文章</li>
+                <li class="tu" style="cursor: pointer;">图文教学</li>
+                <li class="shi" style="cursor: pointer;">视频教学</li>
+                <li class="ke" style="cursor: pointer;">可购买展品</li>
+            </ul>
+        </div>
+        <div class="world0">
+            <div class="it1 u33_img">
+                <p id="p1">展品信息</p>
+            </div>
+
+            <div class="it2 u33_img">
+                <div class="it2_1">
+                    <p id="p2">展品名称:</p>
+                    <input type="text" value="不超过10字！">
+                </div>
+
+                <div class="it2_2">
+                    <div class="borders">作品类型
+                        <img src="image/我要发表/down.png">
+                        <!--<span class="icon-ctrl"></span>-->
+                    </div>
+                    <!--复制粘贴到span  虽然看不出来  但是有东西的-->
+                    <div class="load borders">最新</div>
+                    <div class="load borders">最热</div>
+                    <div class="load borders">评论</div>
+                    <div class="load borders">点赞</div>
+                    <div class="load borders">收藏</div>
+                </div>
+
+                <div class="chanshu">
+                    <p>展品阐述:</p>
+                    <textarea style="resize:none;">阐述内容</textarea>
+                </div>
+            </div>
+
+            <div class="it3 u33_img">
+                <div class="it31">
+                    <p>上传展品</p>
+                    <div class="bg">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="it4 u33_img">
+                <input type="button" value="发布" class="it4_1 borderss">
+            </div>
+        </div>
+        <div class="world1" hidden>
+            <div class="it1 u33_img">
+                <p id="p1">文章信息</p>
+            </div>
+
+            <div class="it2 u33_img">
+                <div class="it2_1">
+                    <p id="p2">文章名称:</p>
+                    <input type="text" value="不超过10字！">
+                </div>
+
+                <div class="it2_2">
+                    <div class="borders">作品类型
+                        <img src="image/我要发表/down.png">
+                        <!--<span class="icon-ctrl"></span>-->
+                    </div>
+                    <!--复制粘贴到span  虽然看不出来  但是有东西的-->
+                    <div class="load borders">最新</div>
+                    <div class="load borders">最热</div>
+                    <div class="load borders">评论</div>
+                    <div class="load borders">点赞</div>
+                    <div class="load borders">收藏</div>
+                </div>
+
+                <div class="chanshu">
+                    <p>文章阐述:</p>
+                    <textarea style="resize:none;">阐述内容</textarea>
+                </div>
+            </div>
+
+            <div class="it3 u33_img">
+                <div class="it31">
+                    <p>上传文章 </p>
+                    <div class="bg">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="it4 u33_img">
+                <input type="button" value="发布" class="it4_1 borderss">
+            </div>
+        </div>
+        <div class="world2" hidden>
+            <div class="it1 u33_img">
+                <p id="p1">图文教学</p>
+            </div>
+
+            <div class="it2 u33_img">
+                <div class="it2_1">
+                    <p id="p2">标题:</p>
+                    <input type="text" value="不超过10字！">
+                </div>
+
+                <div class="it2_2">
+                    <div class="borders">作品类型
+                        <img src="image/我要发表/down.png">
+                        <!--<span class="icon-ctrl"></span>-->
+                    </div>
+                    <!--复制粘贴到span  虽然看不出来  但是有东西的-->
+                    <div class="load borders">最新</div>
+                    <div class="load borders">最热</div>
+                    <div class="load borders">评论</div>
+                    <div class="load borders">点赞</div>
+                    <div class="load borders">收藏</div>
+                </div>
+
+                <div class="chanshu">
+                    <p>阐述:</p>
+                    <textarea style="resize:none;">阐述内容</textarea>
+                </div>
+            </div>
+
+            <div class="it3 u33_img">
+                <div class="it31">
+                    <p>上传图片</p>
+                    <div class="bg">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="it4 u33_img">
+                <input type="button" value="发布" class="it4_1 borderss">
+            </div>
+        </div>
+        <div class="world4" hidden>
+            <div class="it1 u33_img">
+                <p id="p1">可购买展品</p>
+            </div>
+
+            <div class="it2 u33_img">
+                <div class="it2_1">
+                    <p id="p2">展品名称:</p>
+                    <input type="text" value="不超过10字！">
+                </div>
+                <div class="qian">
+                    <p id="p2">展品价格:</p>
+                    <input type="text">
+                </div>
+
+                <div class="it2_2">
+                    <div class="borders">作品类型
+                        <img src="image/我要发表/down.png">
+                        <!--<span class="icon-ctrl"></span>-->
+                    </div>
+                    <!--复制粘贴到span  虽然看不出来  但是有东西的-->
+                    <div class="load borders">最新</div>
+                    <div class="load borders">最热</div>
+                    <div class="load borders">评论</div>
+                    <div class="load borders">点赞</div>
+                    <div class="load borders">收藏</div>
+                </div>
+
+                <div class="chanshu">
+                    <p>阐述:</p>
+                    <textarea style="resize:none;">阐述内容</textarea>
+                </div>
+            </div>
+
+            <div class="it3 u33_img">
+                <div class="it31">
+                    <p>上传展品</p>
+                    <div class="bg">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="it4 u33_img">
+                <input type="button" value="发布" class="it4_1 borderss">
+            </div>
+        </div>
+        <div class="world3" hidden>
+            <div class="it1 u33_img">
+                <p id="p1">视频教学</p>
+            </div>
+
+            <div class="it2 u33_img">
+                <div class="it2_1">
+                    <p id="p2">标题:</p>
+                    <input type="text" value="不超过10字！">
+                </div>
+
+                <div class="it2_2">
+                    <div class="borders">作品类型
+                        <img src="image/我要发表/down.png">
+                        <!--<span class="icon-ctrl"></span>-->
+                    </div>
+                    <!--复制粘贴到span  虽然看不出来  但是有东西的-->
+                    <div class="load borders">最新</div>
+                    <div class="load borders">最热</div>
+                    <div class="load borders">评论</div>
+                    <div class="load borders">点赞</div>
+                    <div class="load borders">收藏</div>
+                </div>
+
+                <div class="chanshu">
+                    <p>阐述:</p>
+                    <textarea style="resize:none;">阐述内容</textarea>
+                </div>
+            </div>
+
+            <div class="it3 u33_img">
+                <div class="it31">
+                    <p>上传视频</p>
+                    <div class="bg">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="it4 u33_img">
+                <input type="button" value="发布" class="it4_1 borderss">
+            </div>
+        </div>
+    </div>
+
+    <!--footer start-->
+    <div class="footer">
+
+        <div class="footer-content w">
+            <div class="footer-header fl">
+                <img src="image/login.jpg" alt="艺韵" title="艺韵" style="width: 80px;height: 80px;">
+            </div>
+            <div class="footer-msg fl">
+                <ul>
+                    <li><a href="#">网站首页</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">招聘信息</a></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">广告服务</a></li>
+                    <li><a href="#">网站地图</a></li>
+                    <li><a href="#">意见反馈</a></li>
+                </ul>
+                <p>Copyright © www.xxx.com, All Rights Reserved. 助你快速找到心灵的沟通</p>
+            </div>
+            <div class="other fr">
+
+                <ul>
+                    <li id="erweima"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="erweima">
+                    <img src="image/erweima.JPG" alt="" style="width: 83px;height: 83px">
+                    <span>微信扫码关注</span>
+                </div>
+            </div>
+            <div class="phone fr">
+                <span></span>
+                24小时客服热线 &nbsp;&nbsp;&nbsp;
+                400-000-0000
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+    <!--悬浮工具-->
+    <div class="xuanfu">
+        <div class="xuanfu-left fl">
+            <p>微信扫描二维码</p>
+            <img src="image/erweima.JPG" style="width: 100px;height: 100px">
+        </div>
+        <div class="xuanfu-right fr">
+            <ul>
+                <li><a href="#" class="maodian1"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#" class="showerweima"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="js/publish.js"></script>
+</body>
+
+</html>

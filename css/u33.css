@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.u33_img {
+    position: relative;
+    width: 300px;
+    height: 170px;
+    margin: 20px auto 0;
+    font-family: 'Impact Bold', 'Impact Normal', 'Impact';
+    font-size: 48px;
+    color: #666;
+}
+.u33_text{
+    position: absolute;
+    left: 0;
+    top: 35px;
+}
+.u33_p {
+    width: 300px;
+    position: absolute;
+    margin-top: -135px;
+}
+.My {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: "Arial";
+}
+.u35_img {
+    width: 1254px;
+    height: 501px;
+    margin: -100px auto 0;
+}
+.u33_p1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Axure Handwriting";
+}
+#anniu {
+    width: 1254px;
+    height: 94px;
+    background-color: #fff;
+    top: 145%;
+}
+#anniu ul li {
+    float: left;
+    margin-left: 50px;
+    height: 94px;
+    line-height: 94px;
+    color: #666;
+    font-size: 20px;
+    font-family: "Arial";
+    list-style: none;
+}
+.it1 {
+    top: 160%;
+    width: 1254px;
+    height: 64px;
+    background-color: #ffffff;
+}
+.it1 #p1 {
+    font-size: 23px;
+    text-align: left;
+    line-height: 64px;
+    margin-left: 30px;
+}
+.it1 #p2 {
+    font-size: 23px;
+    text-align: left;
+    line-height: 64px;
+    margin-left: 30px;
+}
+.it1 span {
+    font-size: 23px;
+}
+.it2 {
+    width: 1254px;
+    height: 303px;
+    background-color: #fff;
+    top: 184%;
+    border-top: 1px solid rgba(69, 76, 71, 0.68);
+}
+.it2 .it2_1 {
+    width: 1254px;
+    height: 60px;
+}
+.it2 p {
+    width: 100px;
+    font-size: 20px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: inline;
+}
+.it2 input {
+    width: 300px;
+    font-size: 15px;
+    float: left;
+    margin-top: 33px;
+    margin-left: 50px;
+    border: 1px solid #CCC;
+    color: #CCC;
+    font-family: "Arial";
+}
+.it2_2 {
+    width: 175px;
+    height: 40px;
+    font-size: 16px;
+    color: #9DA5A7;
+    font-weight: bold;
+    text-align: left;
+    margin: 50px 0 0 30px;
+    position: absolute;
+}
+.it2_2 img {
+    width: 20px;
+    height: 20px;
+    margin-left: 60px;
+}
+.borders {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    text-align: center;
+}
+.it2_2 .load {
+    display: none;
+    background-color: #fff;
+}
+.chanshu {
+    width: 1254px;
+    margin-top: 130px;
+}
+.chanshu textarea {
+    width: 310px;
+    height: 24px;
+    font-size: 14px;
+    float: left;
+    margin: 35px 0 0 55px;
+    border: 1px solid #ccc;
+    color: #CCC;
+    font-family: "Arial";
+}
+.it3 {
+    top: 237%;
+    width: 1254px;
+    height: 367px;
+    background-color: #fff;
+}
+.it31 {
+    height: 64px;
+    border-bottom: 1px solid #ccc;
+}
+.it31 p {
+    text-align: left;
+    font-size: 23px;
+    line-height: 64px;
+    margin-left: 30px;
+}
+.it3 .bg {
+    width: 437px;
+    height: 248px;
+    background-color: #CCC;
+    margin: 27px 0 0 30px;
+}
+.it3 input {
+    width: 300px;
+    height: 26px;
+    font-size: 14px;
+    margin: 111px 0 0 50px;
+    position: absolute;
+}
+.it4 {
+    top: 275%;
+    width: 1254px;
+    height: 50px;
+}
+.borderss {
+    width: 250px;
+    height: 48px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 20px;
+    float: left;
+}
+.it4 .it4_1 {
+    background-color: #FFE366;
+    margin-left: 30px;
+}
+.it4 .it4_2 {
+    background-color: #fff;
+    margin-left: 150px;
+}
+.qian{
+    margin: 10px 0px 50px 0px;
+}
+
+
+/*悬浮start*/
+.xuanfu{
+    width: 209px;
+    height: 249px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.xuanfu-left{
+    width: 145px;
+    height: 141px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    display: none;
+}
+.xuanfu-left p{
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999999;
+    margin: 0;
+}
+.xuanfu-left img{
+    margin-left: 23px;
+}
+.xuanfu-right{
+    width: 60px;
+    height: 100%;
+}
+.xuanfu-right li{
+    width: 60px;
+    line-height: 60px;
+    margin-top: 3px;
+    font-family: 'cc';
+    font-size: 24px;
+    text-align: center;
+    background-color: #D8E0E5;
+}
+.xuanfu-right li a{
+    width: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+}
+.xuanfu-right li a:hover{
+    color: #0079FE;
+}
+.xuanfu-right li:nth-child(1){
+    margin-top: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.xuanfu-right li:nth-child(2){
+    margin-top: 63px;
+}
+/*悬浮end*/
